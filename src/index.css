@@ -1,13 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  /* overflow: hidden; */
+  overflow-x: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: rgb(238, 190, 206);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 190, 206, 1) 39.3%,
+    rgba(0, 0, 0, 1) 39.3%
+  );
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-shadow {
+  text-shadow: 2px 2px #ff8787;
+}
+
+@media only screen and (min-width: 770px) {
+  body {
+    background: rgb(238, 190, 206);
+    background: linear-gradient(
+      180deg,
+      rgba(238, 190, 206, 1) 41%,
+      rgba(0, 0, 0, 1) 41%
+    );
+  }
+}
+
+@media only screen and (min-width: 1010px) {
+  body {
+    background: rgb(238, 190, 206);
+    background: linear-gradient(
+      180deg,
+      rgba(238, 190, 206, 1) 47.7%,
+      rgba(0, 0, 0, 1) 47.7%
+    );
+  }
 }
